@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Outfit;
+}
+
+@layer base{
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.rich-text{font-size: 15px;color: #7A7B7D;}
+.rich-text p{margin-bottom: 16px;}
+.rich-text h1{font-size: 36px; font-weight: 800; color: #252525; margin-bottom: 8px;}
+.rich-text h2{font-size: 22px; font-weight: 700; color: #252525; margin-bottom: 8px;}
+.rich-text h3{font-size: 19px; font-weight: 600; color: #333333; margin-bottom: 8px;}
+.rich-text h4{font-size: 16px; font-weight: 500; color: #444444; margin-bottom: 8px;}
+.rich-text h5{font-size: 14px; font-weight: 400; color: #555555; margin-bottom: 8px;}
+.rich-text h6{font-size: 12px; font-weight: 400; color: #666666; margin-bottom: 8px;}
+.rich-text strong{font-weight: 700;}
+.rich-text ul {margin-left: 30px; list-style-type: decimal;}
+.rich-text ol {margin-left: 30px; list-style-type: disc;}
+.rich-text li{margin-bottom: 8px;}
+
+/* Kanban Board - 4 Columns Visible with Hidden Scrollbars */
+.kanban-container {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox - hide scrollbar */
+  -ms-overflow-style: none; /* IE/Edge - hide scrollbar */
+}
+
+.kanban-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari - hide scrollbar */
+}
+
+.kanban-stages-wrapper {
+  min-width: fit-content;
+  width: max-content;
+}
+
+.kanban-column {
+  /* Calculate width for exactly 4 columns visible */
+  width: calc((100vw - 120px) / 4); /* 32px padding + 72px gaps (4*18px) */
+  min-width: 280px; /* Minimum readable width */
+  max-width: 350px; /* Maximum for large screens */
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1536px) {
+  .kanban-column {
+    width: calc((100vw - 100px) / 4);
+    min-width: 260px;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .kanban-column {
+    width: calc((100vw - 80px) / 4);
+    min-width: 240px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .kanban-column {
+    width: calc((100vw - 60px) / 3); /* 3 columns on tablets */
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kanban-column {
+    width: calc((100vw - 40px) / 2); /* 2 columns on mobile */
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .kanban-column {
+    width: calc(100vw - 40px); /* 1 column on small mobile */
+    min-width: 320px;
+  }
+}

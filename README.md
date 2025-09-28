@@ -2,13 +2,11 @@
 
 A comprehensive React-based hiring platform that enables HR teams to manage jobs, candidates, and assessments efficiently. Built with modern technologies and best practices for optimal user experience.
 
-![Overview](https://github.com/user-attachments/assets/1b1e6b6b-602a-456b-8b51-eecfff38fa72)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/your-username/talentflow-mini-hiring-platform/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM/releases)
 [![React](https://img.shields.io/badge/React-19.1.1-blue.svg)](https://reactjs.org/)
 [![Node](https://img.shields.io/badge/Node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20App-brightgreen.svg)](https://talentflow-demo.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-View%20Source-black.svg)](https://github.com/your-username/talentflow-mini-hiring-platform)
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Source-black.svg)](https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM)
 
 ## Table of Contents
 
@@ -29,8 +27,8 @@ Get up and running with TALENTFLOW in minutes:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/talentflow-mini-hiring-platform.git
-cd talentflow-mini-hiring-platform
+git clone https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM.git
+cd "TALENTFLOW – A MINI HIRING PLATFORM"
 
 # Install dependencies
 npm install
@@ -42,8 +40,9 @@ npm run dev
 ```
 
 **Demo Login Credentials:**
-- **Email**: `hr@talentflow.com`
-- **Password**: `demo123`
+- **Email**: `extnt@hr.in` or any valid email format
+- **Password**: `123456` or any password
+- **Admin Login**: `extnt@hr.in` / `123456`
 
 ## ✨ Features & Screenshots
 
@@ -57,20 +56,48 @@ npm run dev
 - **💾 Offline Support**: Local data persistence with IndexedDB
 - **🎨 Modern UI/UX**: Clean, intuitive interface with smooth animations
 - **⚡ Performance Optimized**: Virtualized lists and efficient rendering
+- **📊 Advanced Timeline System**: Comprehensive candidate timeline with stage tracking, validation, and audit trails
+- **🚀 Smart Candidate Progression**: Intelligent stage transition validation with automatic timeline generation
+
+### 🕰️ Advanced Timeline System
+
+TALENTFLOW features a sophisticated candidate timeline system that tracks every stage transition with precision:
+
+#### ✨ Timeline Features:
+- **📅 Chronological Order**: Strict chronological timeline (oldest → newest) with "Application Submitted" always at the bottom
+- **🚫 Duplicate Prevention**: Advanced deduplication prevents multiple identical transitions
+- **⚙️ Transition Validation**: Smart validation ensures only logical stage progressions (e.g., Applied → Interview → Hired)
+- **📝 Audit Trails**: Complete audit trail with author attribution (System/HR Manager) and timestamps
+- **🔄 Contradiction Removal**: Automatically removes contradictory sequences (e.g., Hired → Rejected → Hired)
+- **📈 Backfill Logic**: Intelligent timeline backfilling for candidates seeded at advanced stages
+- **📊 Real-time Updates**: Instant timeline updates with optimistic UI feedback
+
+#### 🛠️ Technical Implementation:
+```javascript
+// Example: Candidate progression validation
+const validTransitions = {
+  'Applied': ['Online Assessment', 'Rejected'],
+  'Online Assessment': ['Technical Interview', 'Rejected'],
+  'Technical Interview': ['Final Interview', 'Rejected'],
+  'Final Interview': ['Hired', 'Rejected'],
+  'Rejected': ['Applied', 'Online Assessment'], // Second chances
+  'Hired': ['Rejected'] // Final decision changes
+}
+```
 
 ### 📸 Screenshots
 
-![Dashboard](https://github.com/user-attachments/assets/963e6eaf-97c9-4626-a61d-d738595e2ec4)
+![Dashboard](docs/images/dashboard-screenshot.png)
 *Main dashboard with overview of jobs, candidates, and assessments*
 
-![Jobs Board](https://github.com/user-attachments/assets/93601add-15e4-46d2-93db-b45a0da1dac4)
+![Jobs Board](docs/images/jobs-board-screenshot.png)
 *Jobs management board with drag-and-drop reordering*
 
-![Candidates Kanban](https://github.com/user-attachments/assets/1b440f5b-0d63-4247-8e68-d272bdcdee8e)
+![Candidates Kanban](docs/images/candidates-kanban-screenshot.png)
 *Candidate management with kanban board view*
 
-![Assessment](https://github.com/user-attachments/assets/0757a30b-6594-4b89-869b-400c4e6f9737)
-*Assessment with live preview*
+![Assessment Builder](docs/images/assessment-builder-screenshot.png)
+*Assessment builder with live preview*
 
 ## 🛠️ Tech Stack
 
@@ -117,7 +144,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM.git
-   cd talentflow-mini-hiring-platform
+   cd "TALENTFLOW – A MINI HIRING PLATFORM"
    ```
 
 2. **Install dependencies**
@@ -153,8 +180,8 @@ npm run lint
 ### Getting Started
 
 1. **Login to the system**
-   - **Email**: `hr@talentflow.com` (or any valid email format)
-   - **Password**: `demo123` (or any password)
+   - **Email**: `extnt@hr.in` (or any valid email format)
+   - **Password**: `123456` (or any password)
    
    *Note: Authentication is mock-based for demo purposes*
 
@@ -409,17 +436,16 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 ### Project Team
 
 **Lead Developer**
-- Name: [Your Name]
-- Email: [your.email@example.com]
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [@your-username](https://github.com/your-username)
+- Name: SP201004
+- GitHub: [@sp201004](https://github.com/sp201004)
+- Project: TALENTFLOW - Mini Hiring Platform
 
 ### Project Information
 
-- **Repository**: [GitHub Repository](https://github.com/your-username/talentflow-mini-hiring-platform)
-- **Live Demo**: [Demo URL](https://talentflow-demo.vercel.app)
-- **Documentation**: [Project Wiki](https://github.com/your-username/talentflow-mini-hiring-platform/wiki)
-- **Issues**: [Bug Reports & Feature Requests](https://github.com/your-username/talentflow-mini-hiring-platform/issues)
+- **Repository**: [GitHub Repository](https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM)
+- **Documentation**: [Project Documentation](https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM#readme)
+- **Issues**: [Bug Reports & Feature Requests](https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM/issues)
+- **Releases**: [Latest Releases](https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM/releases)
 
 ### Support
 
