@@ -2,12 +2,13 @@
 
 A comprehensive React-based hiring platform that enables HR teams to manage jobs, candidates, and assessments efficiently. Built with modern technologies and best practices for optimal user experience.
 
+![Overview](https://github.com/user-attachments/assets/1b1e6b6b-602a-456b-8b51-eecfff38fa72)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/your-username/talentflow-mini-hiring-platform/releases)
 [![React](https://img.shields.io/badge/React-19.1.1-blue.svg)](https://reactjs.org/)
 [![Node](https://img.shields.io/badge/Node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
-[![GitHub](https://img.shields.io/badge/GitHub-View%20Source-black.svg)](https://github.com/sp201004/TALENTFLOW-A-MINI-HIRING-PLATFORM)
-
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20App-brightgreen.svg)](https://talentflow-demo.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-View%20Source-black.svg)](https://github.com/your-username/talentflow-mini-hiring-platform)
 ## Table of Contents
 
 - [🚀 Quick Start](#-quick-start)
@@ -87,17 +88,17 @@ const validTransitions = {
 
 ### 📸 Screenshots
 
-![Dashboard](docs/images/dashboard-screenshot.png)
+![Dashboard](https://github.com/user-attachments/assets/963e6eaf-97c9-4626-a61d-d738595e2ec4)
 *Main dashboard with overview of jobs, candidates, and assessments*
 
-![Jobs Board](docs/images/jobs-board-screenshot.png)
+![Jobs Board](https://github.com/user-attachments/assets/93601add-15e4-46d2-93db-b45a0da1dac4)
 *Jobs management board with drag-and-drop reordering*
 
-![Candidates Kanban](docs/images/candidates-kanban-screenshot.png)
+![Candidates Kanban](https://github.com/user-attachments/assets/1b440f5b-0d63-4247-8e68-d272bdcdee8e)
 *Candidate management with kanban board view*
 
-![Assessment Builder](docs/images/assessment-builder-screenshot.png)
-*Assessment builder with live preview*
+![Assessment](https://github.com/user-attachments/assets/0757a30b-6594-4b89-869b-400c4e6f9737)
+*Assessment with live preview*
 
 ## 🛠️ Tech Stack
 
@@ -180,7 +181,7 @@ npm run lint
 ### Getting Started
 
 1. **Login to the system**
-   - **Email**: `extnt@hr.in` (or any valid email format)
+   - **Email**: `entnt@hr.in` (or any valid email format)
    - **Password**: `123456` (or any password)
    
    *Note: Authentication is mock-based for demo purposes*
